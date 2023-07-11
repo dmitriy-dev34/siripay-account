@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="./favicon/favicon.png">
+  <meta name="theme-color" content="#fff">
+  <title>SiriPay | account profile</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="loader"><img src="img/logo-img.svg" width="64" height="64" alt=""></div>
+  </div>
+
+  <header class="header">
+  <div class="container header__container">
+
+    <div class="header__left">
+      <!-- burger-menu -->
+      <button class="btn-burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="btn-burger__line"></span>
+      </button>
+      <!-- logo -->
+      <div class="logo">
+        <div class="logo__icon">
+          <img class="logo__img" src="img/logo-img.svg" alt="">
+        </div>
+        <span class="logo__name">Siri<span class="text-accent">Pay</span></span>
+      </div>
+    </div>
+    <!-- Language -->
+    <div class="language">
+      <button class="btn-reset btn-settings language__btn">En</button>
+      <div class="language__dropdown">
+        <ul class="list-reset language__list">
+          <li class="language__item active"><a class="language__link" href="#">English</a></li>
+          <li class="language__item"><a class="language__link" href="#">Russian</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="main">
+    <!----------- currency-rates ------------->
+<div class="currency-rates">
+  <div class="currency-rates__list">
+    <li class="currency-rates__item">
+      USDT-TRC20/UAH 36.93
+    </li>
+    <li class="currency-rates__item">
+      KZT/RUB 5.78
+    </li>
+    <li class="currency-rates__item">
+      UAH/USDT-TRC20 37.75
+    </li>
+    <li class="currency-rates__item">
+      USD/RUB 90.37
+    </li>
+    <li class="currency-rates__item">
+      RUB/USD 92.19
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/USD 0.99
+    </li>
+    <li class="currency-rates__item">
+      USD/USDT-ERC20 0.99
+    </li>
+    <li class="currency-rates__item">
+      USD/USDT-TRC20 0.99
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/EUR 1.09
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/EUR 1.09
+    </li>
+    <li class="currency-rates__item">
+      EUR/USDT-ERC20 1.07
+    </li>
+    <li class="currency-rates__item">
+      EUR/USDT-TRC20 1.07
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/USDT-TRC20 0.99
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/USDT-ERC20 0.99
+    </li>
+    <li class="currency-rates__item">
+      EUR/RUB 97.73
+    </li>
+    <li class="currency-rates__item">
+      RUB/EUR 102.67
+    </li>
+    <li class="currency-rates__item">
+      EUR/USD 1.07
+    </li>
+    <li class="currency-rates__item">
+      USD/EUR 1.07
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/RUB 90.78
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/RUB 90.78
+    </li>
+    <li class="currency-rates__item">
+      RUB/USDT-ERC20 92.62
+    </li>
+    <li class="currency-rates__item">
+      RUB/USDT-TRC20 92.62
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/USD 0.99
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/KZT 445.55
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/KZT 445.55
+    </li>
+    <li class="currency-rates__item">
+      KZT/USDT-ERC20 445.55
+    </li>
+    <li class="currency-rates__item">
+      KZT/USDT-TRC20 445.55
+    </li>
+  </div>
+</div>
+<!----------- / .currency-rates ------------->
+
+    <div class="dashboard">
+      <div class="container dashboard__container dashboard--h100">
+        <!-- Nav -->
+        <div class="nav-overlay"></div>
+        <nav class="nav">
+          <ul class="list-reset menu">
+            <li class="menu__item">
+              <a href="./" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-deposit"></use>
+                </svg>
+                <span class="menu__label">Deposit</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./transfers.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-transfers"></use>
+                </svg>
+                <span class="menu__label">Transfers</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./payouts.html" class="menu__link active">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-payouts"></use>
+                </svg>
+                <span class="menu__label">Payouts</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./history.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-history"></use>
+                </svg>
+                <span class="menu__label">History</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./account.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-account"></use>
+                </svg>
+                <span class="menu__label">Account</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./support.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-support"></use>
+                </svg>
+                <span class="menu__label">Support</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./login.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-exit"></use>
+                </svg>
+                <span class="menu__label">Exit</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- / Nav -->
+
+        <div class="dashboard__body">
+          <div class="dashboard__content">
+
+            <div class="payouts">
+              <a href="./payouts.html" class="btn-reset btn-back">
+                <svg class="btn-back__icon">
+                  <use xlink:href="img/sprite.svg#ic-back"></use>
+                </svg>
+              </a>
+
+              <div class="payouts__heading">
+                <h2 class="dashboard__title payouts__title">Payouts Crypto:</h2>
+                <h3 class="payouts__subtitle">Withdrawal to USDT-TRC20:</h3>
+              </div>
+
+              <!-- form-payouts -->
+              <form action="#" class="form form-payouts">
+                <div class="pay-select">
+                  <label class="form__label">Currency:</label>
+                  <div class="pay-select__filed">
+                    <span class="ic-payment ic-usdt"></span>
+                    <span class="pay-select__input">0 USDT-TRC20</span>
+                  </div>
+                  <ul class="pay-select__options">
+                    <li class="pay-select__option">
+                      <span class="ic-payment ic-usdt"></span>
+                      <span class="payment-option">0 USDT-TRC20</span>
+                    </li>
+                    <li class="pay-select__option">
+                      <span class="ic-payment ic-usdt"></span>
+                      <span class="payment-option">0 USDT-ERC20</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="form__group">
+                  <div class="form__filed">
+                    <label class="form__label">Wallet Address:</label>
+                    <input type="number" name="payout-card" class="form__input" placeholder="Must start with 'T'" autocomplete="off"
+                      required>
+                  </div>
+                  <div class="form__filed">
+                    <label class="form__label">Amount (USDT-TRC20):</label>
+                    <input type="number" name="payout-amount" class="form__input" placeholder="0.00" autocomplete="off" required>
+                  </div>
+                </div>
+
+                <div class="form__info commission__info">
+                  <span class="commission-ru">*Commission (0 + 2): 2USDT TRC20</span>
+                  <span class="commission-kzt" style="display: none;">*Commission (0 + 300): 300₸</span>
+                </div>
+
+                <div class="payouts__btns">
+                  <button type="button" class="btn-reset btn-payout btn-file">
+                    <svg class="btn-payout__icon">
+                      <use xlink:href="img/sprite.svg#ic-file"></use>
+                    </svg>
+                    <span class="btn-payout__text">Add File</span>
+                  </button>
+                  <button type="button" class="btn-reset btn-payout btn-comment">
+                    <svg class="btn-payout__icon">
+                      <use xlink:href="img/sprite.svg#ic-comment"></use>
+                    </svg>
+                    <span class="btn-payout__text">Add Comment</span>
+                  </button>
+                </div>
+
+                <!-- add-file -->
+                <div class="add-file">
+                  <svg class="add-file__close">
+                    <use xlink:href="img/sprite.svg#ic-x"></use>
+                  </svg>
+                  <label for="select-file" class="add-file__container" id="dropcontainer">
+                    <svg class="ic-upload-file">
+                      <use xlink:href="img/sprite.svg#ic-upload"></use>
+                    </svg>
+                    <span class="add-file__title">Select a file from the device</span>
+                    <input type="file" class="add-file__input" id="select-file" required>
+                  </label>
+                </div>
+                <!-- / .add-file -->
+
+                <!-- add-comment -->
+                <div class="payouts-comment">
+                  <svg class="comment-close">
+                    <use xlink:href="img/sprite.svg#ic-x"></use>
+                  </svg>
+                  <textarea name="payouts-comment" class="form__textarea" placeholder="Enter your comment text"></textarea>
+                </div>
+
+                <!-- / .add-comment -->
+
+                <div class="payouts__info">
+                  <p>Each payment must be on a separate line. File must not contain more than 100 lines. Copy payment details or upload a
+                    file with the following layout:</p>
+                  <p>Card number; Amount; Comments (optional); Card number; Amount;</p>
+                  <p>Example: <br>
+                    4111000011110000; 100; <br>
+                    4111000011110000; 100; <br>
+                    my-comment;</p>
+                </div>
+
+                <button class="btn form__btn btn-sendmoney">Send Money</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!----------- Footer ------------->
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__copyright">© SiriPay.org / All rights reserved 2023</div>
+    <div class="footer__links">
+      <a href="https://siripay.org/user-agreement.html" target="_blank" class="footer__link">User Agreement</a>
+      <a href="https://siripay.org/privacy-policy.html" target="_blank" class="footer__link">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

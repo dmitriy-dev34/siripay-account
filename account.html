@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="./favicon/favicon.png">
+  <meta name="theme-color" content="#fff">
+  <title>SiriPay | account profile</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="loader"><img src="img/logo-img.svg" width="64" height="64" alt=""></div>
+  </div>
+
+  <header class="header">
+  <div class="container header__container">
+
+    <div class="header__left">
+      <!-- burger-menu -->
+      <button class="btn-burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="btn-burger__line"></span>
+      </button>
+      <!-- logo -->
+      <div class="logo">
+        <div class="logo__icon">
+          <img class="logo__img" src="img/logo-img.svg" alt="">
+        </div>
+        <span class="logo__name">Siri<span class="text-accent">Pay</span></span>
+      </div>
+    </div>
+    <!-- Language -->
+    <div class="language">
+      <button class="btn-reset btn-settings language__btn">En</button>
+      <div class="language__dropdown">
+        <ul class="list-reset language__list">
+          <li class="language__item active"><a class="language__link" href="#">English</a></li>
+          <li class="language__item"><a class="language__link" href="#">Russian</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="main">
+    <!----------- currency-rates ------------->
+<div class="currency-rates">
+  <div class="currency-rates__list">
+    <li class="currency-rates__item">
+      USDT-TRC20/UAH 36.93
+    </li>
+    <li class="currency-rates__item">
+      KZT/RUB 5.78
+    </li>
+    <li class="currency-rates__item">
+      UAH/USDT-TRC20 37.75
+    </li>
+    <li class="currency-rates__item">
+      USD/RUB 90.37
+    </li>
+    <li class="currency-rates__item">
+      RUB/USD 92.19
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/USD 0.99
+    </li>
+    <li class="currency-rates__item">
+      USD/USDT-ERC20 0.99
+    </li>
+    <li class="currency-rates__item">
+      USD/USDT-TRC20 0.99
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/EUR 1.09
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/EUR 1.09
+    </li>
+    <li class="currency-rates__item">
+      EUR/USDT-ERC20 1.07
+    </li>
+    <li class="currency-rates__item">
+      EUR/USDT-TRC20 1.07
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/USDT-TRC20 0.99
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/USDT-ERC20 0.99
+    </li>
+    <li class="currency-rates__item">
+      EUR/RUB 97.73
+    </li>
+    <li class="currency-rates__item">
+      RUB/EUR 102.67
+    </li>
+    <li class="currency-rates__item">
+      EUR/USD 1.07
+    </li>
+    <li class="currency-rates__item">
+      USD/EUR 1.07
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/RUB 90.78
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/RUB 90.78
+    </li>
+    <li class="currency-rates__item">
+      RUB/USDT-ERC20 92.62
+    </li>
+    <li class="currency-rates__item">
+      RUB/USDT-TRC20 92.62
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/USD 0.99
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/KZT 445.55
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/KZT 445.55
+    </li>
+    <li class="currency-rates__item">
+      KZT/USDT-ERC20 445.55
+    </li>
+    <li class="currency-rates__item">
+      KZT/USDT-TRC20 445.55
+    </li>
+  </div>
+</div>
+<!----------- / .currency-rates ------------->
+
+    <div class="dashboard">
+      <div class="container dashboard__container">
+        <!-- Nav -->
+        <div class="nav-overlay"></div>
+        <nav class="nav">
+          <ul class="list-reset menu">
+            <li class="menu__item">
+              <a href="./" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-deposit"></use>
+                </svg>
+                <span class="menu__label">Deposit</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./transfers.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-transfers"></use>
+                </svg>
+                <span class="menu__label">Transfers</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./payouts.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-payouts"></use>
+                </svg>
+                <span class="menu__label">Payouts</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./history.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-history"></use>
+                </svg>
+                <span class="menu__label">History</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link active">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-account"></use>
+                </svg>
+                <span class="menu__label">Account</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./support.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-support"></use>
+                </svg>
+                <span class="menu__label">Support</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./login.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-exit"></use>
+                </svg>
+                <span class="menu__label">Exit</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- / Nav -->
+
+        <div class="dashboard__body">
+          <div class="dashboard__content account">
+            <h2 class="dashboard__title account__title">Account Profile</h2>
+            <div class="user-contacts">
+              <div class="user-contact">
+                <div class="user-contact__img">
+                  <svg class="user-contact__icon">
+                    <use xlink:href="img/sprite.svg#ic-phone"></use>
+                  </svg>
+                </div>
+                <div class="user-contact__info">
+                  <span class="user-contact__info-name">Phone:</span>
+                  <span class="user-contact__info-data">+7 937 733-66-61</span>
+                </div>
+              </div>
+
+              <div class="user-contact">
+                <div class="user-contact__img">
+                  <svg class="user-contact__icon">
+                    <use xlink:href="img/sprite.svg#ic-telegram"></use>
+                  </svg>
+                </div>
+                <div class="user-contact__info">
+                  <span class="user-contact__info-name">Telegram:</span>
+                  <span class="user-contact__info-data">@daemon_rus</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="session">
+              <div class="session__title">Active Sessions:</div>
+
+              <div class="table-container">
+                <table class="session-table">
+                  <thead>
+                    <tr>
+                      <th>System</th>
+                      <th>Browser</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mac OS</td>
+                      <td>Chrome</td>
+                      <td class="delete-session">
+                        <svg class="delete-session__icon">
+                          <use xlink:href="img/sprite.svg#ic-trash"></use>
+                        </svg>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Popup Error -->
+  <div class="popup-info popup-error">
+    <div class="popup-info__body">
+      <svg class="popup-info__close">
+        <use xlink:href="img/sprite.svg#ic-x"></use>
+      </svg>
+      <img class="popup-info__icon" src="img/icons/ic-error.svg" width="56" height="56" alt="">
+      <div class="popup-info__content">
+        <div class="popup-info__title">Error!</div>
+        <p class="popup-info__descr">Authentication credentials were not provided.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup Success -->
+  <div class="popup-info popup-success">
+    <div class="popup-info__body">
+      <svg class="popup-info__close">
+        <use xlink:href="img/sprite.svg#ic-x"></use>
+      </svg>
+      <img class="popup-info__icon" src="img/icons/ic-success.svg" width="56" height="56" alt="">
+      <div class="popup-info__content">
+        <div class="popup-info__title">Success!</div>
+        <p class="popup-info__descr">Session closed successfully.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!----------- Footer ------------->
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__copyright">© SiriPay.org / All rights reserved 2023</div>
+    <div class="footer__links">
+      <a href="https://siripay.org/user-agreement.html" target="_blank" class="footer__link">User Agreement</a>
+      <a href="https://siripay.org/privacy-policy.html" target="_blank" class="footer__link">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

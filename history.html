@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="./favicon/favicon.png">
+  <meta name="theme-color" content="#fff">
+  <title>SiriPay | account profile</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="loader"><img src="img/logo-img.svg" width="64" height="64" alt=""></div>
+  </div>
+
+  <header class="header">
+  <div class="container header__container">
+
+    <div class="header__left">
+      <!-- burger-menu -->
+      <button class="btn-burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="btn-burger__line"></span>
+      </button>
+      <!-- logo -->
+      <div class="logo">
+        <div class="logo__icon">
+          <img class="logo__img" src="img/logo-img.svg" alt="">
+        </div>
+        <span class="logo__name">Siri<span class="text-accent">Pay</span></span>
+      </div>
+    </div>
+    <!-- Language -->
+    <div class="language">
+      <button class="btn-reset btn-settings language__btn">En</button>
+      <div class="language__dropdown">
+        <ul class="list-reset language__list">
+          <li class="language__item active"><a class="language__link" href="#">English</a></li>
+          <li class="language__item"><a class="language__link" href="#">Russian</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="main">
+    <!----------- currency-rates ------------->
+<div class="currency-rates">
+  <div class="currency-rates__list">
+    <li class="currency-rates__item">
+      USDT-TRC20/UAH 36.93
+    </li>
+    <li class="currency-rates__item">
+      KZT/RUB 5.78
+    </li>
+    <li class="currency-rates__item">
+      UAH/USDT-TRC20 37.75
+    </li>
+    <li class="currency-rates__item">
+      USD/RUB 90.37
+    </li>
+    <li class="currency-rates__item">
+      RUB/USD 92.19
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/USD 0.99
+    </li>
+    <li class="currency-rates__item">
+      USD/USDT-ERC20 0.99
+    </li>
+    <li class="currency-rates__item">
+      USD/USDT-TRC20 0.99
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/EUR 1.09
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/EUR 1.09
+    </li>
+    <li class="currency-rates__item">
+      EUR/USDT-ERC20 1.07
+    </li>
+    <li class="currency-rates__item">
+      EUR/USDT-TRC20 1.07
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/USDT-TRC20 0.99
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/USDT-ERC20 0.99
+    </li>
+    <li class="currency-rates__item">
+      EUR/RUB 97.73
+    </li>
+    <li class="currency-rates__item">
+      RUB/EUR 102.67
+    </li>
+    <li class="currency-rates__item">
+      EUR/USD 1.07
+    </li>
+    <li class="currency-rates__item">
+      USD/EUR 1.07
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/RUB 90.78
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/RUB 90.78
+    </li>
+    <li class="currency-rates__item">
+      RUB/USDT-ERC20 92.62
+    </li>
+    <li class="currency-rates__item">
+      RUB/USDT-TRC20 92.62
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/USD 0.99
+    </li>
+    <li class="currency-rates__item">
+      USDT-ERC20/KZT 445.55
+    </li>
+    <li class="currency-rates__item">
+      USDT-TRC20/KZT 445.55
+    </li>
+    <li class="currency-rates__item">
+      KZT/USDT-ERC20 445.55
+    </li>
+    <li class="currency-rates__item">
+      KZT/USDT-TRC20 445.55
+    </li>
+  </div>
+</div>
+<!----------- / .currency-rates ------------->
+
+    <div class="dashboard">
+      <div class="container dashboard__container dashboard--h100">
+        <!-- Nav -->
+        <div class="nav-overlay"></div>
+        <nav class="nav">
+          <ul class="list-reset menu">
+            <li class="menu__item">
+              <a href="./" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-deposit"></use>
+                </svg>
+                <span class="menu__label">Deposit</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./transfers.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-transfers"></use>
+                </svg>
+                <span class="menu__label">Transfers</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./payouts.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-payouts"></use>
+                </svg>
+                <span class="menu__label">Payouts</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link active">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-history"></use>
+                </svg>
+                <span class="menu__label">History</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./account.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-account"></use>
+                </svg>
+                <span class="menu__label">Account</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./support.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-support"></use>
+                </svg>
+                <span class="menu__label">Support</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="./login.html" class="menu__link">
+                <svg class="menu__icon">
+                  <use xlink:href="img/sprite.svg#ic-exit"></use>
+                </svg>
+                <span class="menu__label">Exit</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- / Nav -->
+
+        <div class="dashboard__body">
+          <div class="dashboard__content">
+            <h2 class="dashboard__title text-center">Payout History</h2>
+
+            <div class="payouts-history">
+              <div class="payouts-history__box">
+                <!-- account -->
+                <div class="pay-select">
+                  <label class="form__label">Account:</label>
+                  <div class="pay-select__filed">
+                    <span class="ic-payment ic-money"></span>
+                    <span class="pay-select__input">All Accounts</span>
+                  </div>
+                  <ul class="pay-select__options">
+                    <li class="pay-select__option">
+                      <span class="ic-payment ic-money"></span>
+                      <span class="payment-option">All</span>
+                    </li>
+                    <li class="pay-select__option">
+                      <span class="ic-payment ic-usdt"></span>
+                      <span class="payment-option">0 USDT-ERC20</span>
+                    </li>
+                    <li class="pay-select__option">
+                      <span class="ic-payment ic-usdt"></span>
+                      <span class="payment-option">0 USDT-TRC20</span>
+                    </li>
+                    <li class="pay-select__option">
+                      <span class="ic-payment ic-rub"></span>
+                      <span class="payment-option">0 RUB</span>
+                    </li>
+                    <li class="pay-select__option">
+                      <span class="ic-payment ic-usd"></span>
+                      <span class="payment-option">0 USD</span>
+                    </li>
+                    <li class="pay-select__option">
+                      <span class="ic-payment ic-eur"></span>
+                      <span class="payment-option">0 EUR</span>
+                    </li>
+                    <li class="pay-select__option">
+                      <span class="ic-payment ic-kzt"></span>
+                      <span class="payment-option">0 KZT</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- history-option -->
+                <div class="history-options">
+                  <button class="btn-reset history-option js-modal-btn" data-modal-open="modal-filter">
+                    <svg class="history-option__icon">
+                      <use xlink:href="img/sprite.svg#ic-filter"></use>
+                    </svg>
+                  </button>
+                  <button class="btn-reset history-option js-modal-btn" data-modal-open="modal-download">
+                    <svg class="history-option__icon">
+                      <use xlink:href="img/sprite.svg#ic-download"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="search history-search">
+                <svg class="search__icon">
+                  <use xlink:href="img/sprite.svg#ic-search"></use>
+                </svg>
+                <input type="search" class="search__input history-search__input" placeholder="Card Number / Transaction id / Amount">
+              </div>
+
+              <div class="payouts-history__filter">
+                <button class="btn-reset btn-filter active">Deposit</button>
+                <button class="btn-reset btn-filter">Payout</button>
+                <button class="btn-reset btn-filter">Complete</button>
+                <button class="btn-reset btn-filter">Failed</button>
+              </div>
+
+              <div class="history-reports">
+                <div class="history-reports__head">
+                  <div class="history-reports__title">Recent reports:</div>
+                  <!-- <button class="btn-reset more-reports">More Reports</button> -->
+                </div>
+
+                <div class="history-reports__list">
+                  <a href="#" class="history-reports__link">report-29.06.2023_06:50:20.csv</a>
+                </div>
+
+                <!-- history-transactions -->
+
+                <p class="info-message text-center hide">Operation list is empty!</p>
+
+                <div class="history-transactions">
+                  <div class="transactions-item transaction-deposit">
+                    <div class="transactions-item__head">
+                      <div class="transactions-item__date">03.07.23</div>
+                      <div class="transactions-item__status">Deposit</div>
+                    </div>
+                    <div class="transactions-item__body">
+                      <div class="transactions-item__key">#3cd3635c-333c-4d95-972f-b94c60881cbe</div>
+                      <div class="transactions-item__sum">+60 RUB</div>
+                    </div>
+                  </div>
+                  <!-- transaction-payout -->
+                  <div class="transactions-item transaction-payout">
+                    <div class="transactions-item__head">
+                      <div class="transactions-item__date">03.07.23</div>
+                      <div class="transactions-item__status">Payout</div>
+                    </div>
+                    <div class="transactions-item__body">
+                      <div class="transactions-item__key">#3cd3635c-333c-4d95-972f-b94c60881cbe</div>
+                      <div class="transactions-item__sum">+60 RUB</div>
+                    </div>
+                  </div>
+                  <!-- transaction-complete -->
+                  <div class="transactions-item transaction-complete">
+                    <div class="transactions-item__head">
+                      <div class="transactions-item__date">03.07.23</div>
+                      <div class="transactions-item__status">Complete</div>
+                    </div>
+                    <div class="transactions-item__body">
+                      <div class="transactions-item__key">#3cd3635c-333c-4d95-972f-b94c60881cbe</div>
+                      <div class="transactions-item__sum">+60 RUB</div>
+                    </div>
+                  </div>
+                  <!-- transaction-failed -->
+                  <div class="transactions-item transaction-failed">
+                    <div class="transactions-item__head">
+                      <div class="transactions-item__date">03.07.23</div>
+                      <div class="transactions-item__status">Failed</div>
+                    </div>
+                    <div class="transactions-item__body">
+                      <div class="transactions-item__key">#3cd3635c-333c-4d95-972f-b94c60881cbe</div>
+                      <div class="transactions-item__sum">+60 RUB</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- / .history-transactions -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!----------- Modal Filter History ------------->
+  <div class="modal modal-filter" data-modal="modal-filter">
+    <div class="modal__overlay">
+      <div class="modal__body">
+        <div class="modal__close"></div>
+        <!-- modal-header -->
+        <div class="modal__header text-center">
+          <h3 class="modal__header-title">History Filter</h3>
+        </div>
+        <!-- / .modal-header -->
+
+        <div class="search history-search">
+          <svg class="search__icon">
+            <use xlink:href="img/sprite.svg#ic-search"></use>
+          </svg>
+          <input type="search" class="search__input history-search__input" placeholder="Card Number / Transaction id / Amount">
+        </div>
+
+        <!-- history-period -->
+        <div class="history-period">
+          <div class="select-date">
+            <div class="select-date__filed">
+              <input type="text" class="date-input" placeholder="Select date" readonly>
+              <svg class="select-date__icon">
+                <use xlink:href="img/sprite.svg#ic-calendar"></use>
+              </svg>
+            </div>
+            <div class="calendar-popup">
+              <div class="calendar-popup__header">
+                <div class="calendar-popup__prev-month">‹</div>
+                <div class="calendar-popup__current-month"></div>
+                <div class="calendar-popup__next-month">›</div>
+              </div>
+              <div class="calendar-popup__days"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- filter-options -->
+        <div class="filter-options">
+          <div class="filter-options__box">
+            <div class="filter-options__label">Payment Type:</div>
+            <div class="checkbox-group">
+              <label class="check">
+                <input class="check__input" type="checkbox" name="deposit">
+                <span class="check__box"></span>
+                <span class="check__label">Deposit</span>
+              </label>
+              <label class="check">
+                <input class="check__input" type="checkbox" name="payout">
+                <span class="check__box"></span>
+                <span class="check__label">Payout</span>
+              </label>
+              <label class="check">
+                <input class="check__input" type="checkbox" name="exchange">
+                <span class="check__box"></span>
+                <span class="check__label">Exchange</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-options__box">
+            <div class="filter-options__label">Payment Status:</div>
+            <div class="checkbox-group">
+              <label class="check">
+                <input class="check__input" type="checkbox" name="pending">
+                <span class="check__box"></span>
+                <span class="check__label">Pending</span>
+              </label>
+              <label class="check">
+                <input class="check__input" type="checkbox" name="complete">
+                <span class="check__box"></span>
+                <span class="check__label">Complete</span>
+              </label>
+              <label class="check">
+                <input class="check__input" type="checkbox" name="operating">
+                <span class="check__box"></span>
+                <span class="check__label">Operating</span>
+              </label>
+              <label class="check">
+                <input class="check__input" type="checkbox" name="Failed">
+                <span class="check__box"></span>
+                <span class="check__label">Failed</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- buttons -->
+        <div class="modal__btns">
+          <button type="button" class="btn-reset btn btn-stroke btn-resset">Reset</button>
+          <button type="button" class="btn-reset btn btn-apply">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------- Modal Download ------------->
+  <div class="modal modal-download" data-modal="modal-download">
+    <div class="modal__overlay">
+      <div class="modal__body">
+        <div class="modal__close"></div>
+        <!-- modal-header -->
+        <div class="modal__header text-center">
+          <h3 class="modal__header-title">Download transaction history</h3>
+        </div>
+        <!-- / .modal-header -->
+        <div class="history-format">
+          <div class="history-format__title">Format:</div>
+          <div class="history-format__options">
+            <label for="csv" class="radio">
+              <input class="radio__input" type="radio" name="format-file" id="csv" checked>
+              <span class="radio__box"></span>
+              <span class="radio__label">csv</span>
+            </label>
+            <label for="xlsx" class="radio">
+              <input class="radio__input" type="radio" name="format-file" id="xlsx">
+              <span class="radio__box"></span>
+              <span class="radio__label">xlsx</span>
+            </label>
+          </div>
+        </div>
+        <!-- buttons -->
+        <div class="modal__btns">
+          <button type="button" class="btn-reset btn btn-stroke btn-resset">Reset</button>
+          <button type="button" class="btn-reset btn btn-apply">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------- Footer ------------->
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__copyright">© SiriPay.org / All rights reserved 2023</div>
+    <div class="footer__links">
+      <a href="https://siripay.org/user-agreement.html" target="_blank" class="footer__link">User Agreement</a>
+      <a href="https://siripay.org/privacy-policy.html" target="_blank" class="footer__link">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
